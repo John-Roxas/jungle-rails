@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+  get 'users/create'
   namespace :admin do
     resources :categories, only: [:index, :new, :create]
   end
